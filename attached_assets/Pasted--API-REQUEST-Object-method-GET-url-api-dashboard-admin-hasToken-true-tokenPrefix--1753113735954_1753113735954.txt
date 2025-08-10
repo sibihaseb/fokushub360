@@ -1,0 +1,61 @@
+
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/dashboard/admin", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T16:01:35.462Z" }
+index-GfxNYyeD.js:48:43068
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/admin/invitation/waitlist", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T16:01:35.464Z" }
+index-GfxNYyeD.js:48:43068
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/invitation/status", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T16:01:35.464Z" }
+index-GfxNYyeD.js:48:43068
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/admin/users", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T16:01:35.464Z" }
+index-GfxNYyeD.js:48:43068
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/campaigns", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T16:01:35.465Z" }
+index-GfxNYyeD.js:48:43068
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/questionnaire/categories", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T16:01:35.465Z" }
+index-GfxNYyeD.js:48:43068
+XHRGET
+https://fokushub360.com/api/admin/invitation/waitlist
+[HTTP/3 500  223ms]
+
+XHRGET
+https://fokushub360.com/api/invitation/status
+[HTTP/3 500  89ms]
+
+📡 API RESPONSE: 
+Object { status: 500, statusText: "", url: "https://fokushub360.com/api/invitation/status" }
+index-GfxNYyeD.js:48:43395
+Partitioned cookie or storage access was provided to “https://js.stripe.com/v3/controller-with-preconnect-5a125e125bbb24d882c0a6f33f679c89.html#__shared_params__[version]=basil&apiKey=pk_test_51NwxezAhOiHhM1yQX94ydY61tL8LaN6K1HeVYkAzhAaV36YpuWt9pdJ1XCYLjoxOWn4fsNzENnfeFzC0lFoB7Z3100t4ZBV3JL&apiVersion=2025-03-31.basil&stripeJsId=8a0b427e-ab6e-4aa9-a80e-0d4ed1bf0761&stripeObjId=sobj-bb7fa4ff-0b16-4639-973f-285f471f2128&firstStripeInstanceCreatedLatency=4&controllerCount=1&isCheckout=false&stripeJsLoadTime=1753113695496&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=2be6a5bf-c90c-45a1-b6ff-253a03bf69f52a3f3a&mids[sid]=7c1f226e-f197-4379-9e22-1812e946653103aa5c&referrer=https%3A%2F%2Ffokushub360.com%2Fdashboard%2Fadmin&controllerId=__privateStripeController8881” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+controller-with-preconnect-6c42774ced1350d667a127e6b6d290ea.js:1:22427
+📡 API RESPONSE: 
+Object { status: 200, statusText: "", url: "https://fokushub360.com/api/dashboard/admin" }
+index-GfxNYyeD.js:48:43395
+📡 API RESPONSE: 
+Object { status: 500, statusText: "", url: "https://fokushub360.com/api/admin/invitation/waitlist" }
+index-GfxNYyeD.js:48:43395
+📡 API RESPONSE: 
+Object { status: 200, statusText: "", url: "https://fokushub360.com/api/questionnaire/categories" }
+index-GfxNYyeD.js:48:43395
+📡 API RESPONSE: 
+Object { status: 200, statusText: "", url: "https://fokushub360.com/api/admin/users" }
+index-GfxNYyeD.js:48:43395
+📡 API RESPONSE: 
+Object { status: 200, statusText: "", url: "https://fokushub360.com/api/campaigns" }
+​
+status: 200
+​
+statusText: ""
+​
+url: "https://fokushub360.com/api/campaigns"
+​
+<prototype>: Object { … }
+index-GfxNYyeD.js:48:43395
+Partitioned cookie or storage access was provided to “https://m.stripe.network/inner.html#url=https%3A%2F%2Ffokushub360.com%2Fdashboard%2Fadmin&title=FokusHub360%20-%20Premium%20Virtual%20Focus%20Group%20Platform&referrer=https%3A%2F%2Ffokushub360.com%2F&muid=2be6a5bf-c90c-45a1-b6ff-253a03bf69f52a3f3a&sid=7c1f226e-f197-4379-9e22-1812e946653103aa5c&version=6&preview=false&__shared_params__[version]=basil” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+out-4.5.44.js:1:39660
+Cookie warnings 3
+
+​
+

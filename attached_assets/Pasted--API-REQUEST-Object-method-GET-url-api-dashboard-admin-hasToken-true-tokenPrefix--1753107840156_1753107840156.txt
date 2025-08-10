@@ -1,0 +1,69 @@
+
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/dashboard/admin", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T14:20:37.546Z" }
+​
+hasToken: true
+​
+method: "GET"
+​
+timestamp: "2025-07-21T14:20:37.546Z"
+​
+tokenPrefix: "eyJhbGciOiJIUzI1NiIs..."
+​
+url: "/api/dashboard/admin"
+​
+<prototype>: Object { … }
+index-Bl-ocq7G.js:48:43068
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/admin/invitation/waitlist", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T14:20:37.547Z" }
+index-Bl-ocq7G.js:48:43068
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/invitation/status", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T14:20:37.547Z" }
+index-Bl-ocq7G.js:48:43068
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/admin/users", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T14:20:37.547Z" }
+index-Bl-ocq7G.js:48:43068
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/campaigns", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T14:20:37.547Z" }
+index-Bl-ocq7G.js:48:43068
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/questionnaire/categories", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T14:20:37.547Z" }
+index-Bl-ocq7G.js:48:43068
+📡 API RESPONSE: 
+Object { status: 500, statusText: "", url: "https://fokushub360.com/api/invitation/status" }
+index-Bl-ocq7G.js:48:43395
+📡 API RESPONSE: 
+Object { status: 500, statusText: "", url: "https://fokushub360.com/api/admin/invitation/waitlist" }
+index-Bl-ocq7G.js:48:43395
+Partitioned cookie or storage access was provided to “https://js.stripe.com/v3/controller-with-preconnect-5a125e125bbb24d882c0a6f33f679c89.html#__shared_params__[version]=basil&apiKey=pk_test_51NwxezAhOiHhM1yQX94ydY61tL8LaN6K1HeVYkAzhAaV36YpuWt9pdJ1XCYLjoxOWn4fsNzENnfeFzC0lFoB7Z3100t4ZBV3JL&apiVersion=2025-03-31.basil&stripeJsId=9b336c08-e46a-4cbc-baee-57b54d499177&stripeObjId=sobj-29870a6a-71a7-4263-bedd-5d54ed643bc5&firstStripeInstanceCreatedLatency=4&controllerCount=1&isCheckout=false&stripeJsLoadTime=1753107637539&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=2be6a5bf-c90c-45a1-b6ff-253a03bf69f52a3f3a&mids[sid]=NA&referrer=https%3A%2F%2Ffokushub360.com%2Fdashboard%2Fadmin&controllerId=__privateStripeController7311” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+controller-with-preconnect-6c42774ced1350d667a127e6b6d290ea.js:1:22427
+📡 API RESPONSE: 
+Object { status: 200, statusText: "", url: "https://fokushub360.com/api/campaigns" }
+index-Bl-ocq7G.js:48:43395
+📡 API RESPONSE: 
+Object { status: 200, statusText: "", url: "https://fokushub360.com/api/admin/users" }
+index-Bl-ocq7G.js:48:43395
+📡 API RESPONSE: 
+Object { status: 200, statusText: "", url: "https://fokushub360.com/api/questionnaire/categories" }
+index-Bl-ocq7G.js:48:43395
+📡 API RESPONSE: 
+Object { status: 200, statusText: "", url: "https://fokushub360.com/api/dashboard/admin" }
+index-Bl-ocq7G.js:48:43395
+Partitioned cookie or storage access was provided to “https://m.stripe.network/inner.html#url=https%3A%2F%2Ffokushub360.com%2Fdashboard%2Fadmin&title=FokusHub360%20-%20Premium%20Virtual%20Focus%20Group%20Platform&referrer=https%3A%2F%2Ffokushub360.com%2F&muid=2be6a5bf-c90c-45a1-b6ff-253a03bf69f52a3f3a&sid=NA&version=6&preview=false&__shared_params__[version]=basil” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+out-4.5.44.js:1:39660
+Cookie warnings 2
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/admin/fees/global", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T14:21:47.432Z" }
+index-Bl-ocq7G.js:48:43068
+📡 API RESPONSE: 
+Object { status: 200, statusText: "", url: "https://fokushub360.com/api/admin/fees/global" }
+index-Bl-ocq7G.js:48:43395
+🌐 API REQUEST: 
+Object { method: "POST", url: "/api/admin/fees/global", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T14:22:52.584Z" }
+index-Bl-ocq7G.js:48:43068
+📡 API RESPONSE: 
+Object { status: 500, statusText: "", url: "https://fokushub360.com/api/admin/fees/global" }
+index-Bl-ocq7G.js:48:43395
+
+​
+

@@ -1,0 +1,65 @@
+
+[vite] connecting... client:495:9
+[vite] connected. client:618:15
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools react-dom.development.js:29895:17
+GET
+https://images.unsplash.com/photo-1494790108755-2616b612b789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100
+NS_BINDING_ABORTED
+
+Partitioned cookie or storage access was provided to “https://js.stripe.com/v3/controller-with-preconnect-0aaa0828d7ec7dafcb9783c9fedb9f0f.html#__shared_params__[version]=basil&apiKey=pk_test_51NwxezAhOiHhM1yQX94ydY61tL8LaN6K1HeVYkAzhAaV36YpuWt9pdJ1XCYLjoxOWn4fsNzENnfeFzC0lFoB7Z3100t4ZBV3JL&apiVersion=2025-03-31.basil&stripeJsId=f54f010f-c021-4054-b5c6-24cb61b50512&stripeObjId=sobj-ebf458d0-e690-4999-841c-f587d7068a8a&firstStripeInstanceCreatedLatency=4&controllerCount=1&isCheckout=false&stripeJsLoadTime=1752767108506&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=3abf70cf-351d-4f53-a594-94fb4c7fd1ab6c163a&mids[sid]=889a155f-662b-4867-aede-2487862c70d46ef2b4&referrer=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2F&controllerId=__privateStripeController3671” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+controller-with-preconnect-bc0d7dc474b24ea1ef5a8a05be14e090.js:1:22427
+A resource is blocked by OpaqueResponseBlocking, please check browser console for details. photo-1494790108755-2616b612b789
+Partitioned cookie or storage access was provided to “https://m.stripe.network/inner.html#url=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2Fdashboard%2Fadmin&title=FokusHub360%20-%20Premium%20Virtual%20Focus%20Group%20Platform&referrer=https%3A%2F%2Freplit.com%2F&muid=3abf70cf-351d-4f53-a594-94fb4c7fd1ab6c163a&sid=889a155f-662b-4867-aede-2487862c70d46ef2b4&version=6&preview=false&__shared_params__[version]=basil” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+out-4.5.44.js:1:39660
+Cookie warnings 4
+Uncaught TypeError: (intermediate value).filter is not a function
+    UserManagement user-management.tsx:200
+    React 4
+user-management.tsx:200:39
+Uncaught TypeError: (intermediate value).filter is not a function
+    UserManagement user-management.tsx:200
+    React 4
+user-management.tsx:200:39
+The above error occurred in the <UserManagement> component:
+
+UserManagement@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/src/pages/admin/user-management.tsx:51:27
+Route@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=52704906:323:13
+Switch@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=52704906:379:14
+Router@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/src/App.tsx?v=R35MPAg2tXtI_Ioa17gEK:52:48
+Provider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-PLT6GTVM.js?v=52704906:38:47
+TooltipProvider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=52704906:67:7
+QueryClientProvider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=52704906:2804:27
+App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. react-dom.development.js:18704:15
+Uncaught TypeError: (intermediate value).filter is not a function
+    UserManagement user-management.tsx:200
+    React 15
+    batchCalls notifyManager.ts:69
+    notifyFn notifyManager.ts:17
+    flush notifyManager.ts:40
+    flush notifyManager.ts:39
+    batchNotifyFn notifyManager.ts:20
+    flush notifyManager.ts:38
+    setTimeout handler*scheduleFn notifyManager.ts:22
+    flush notifyManager.ts:37
+    batch notifyManager.ts:56
+    dispatch_fn query.ts:617
+    setData query.ts:218
+    onSuccess query.ts:507
+    resolve retryer.ts:107
+    promise callback*run retryer.ts:159
+    start retryer.ts:218
+    fetch query.ts:540
+    executeFetch_fn queryObserver.ts:346
+    onSubscribe queryObserver.ts:108
+    subscribe subscribable.ts:11
+    useBaseQuery useBaseQuery.ts:92
+    React 16
+user-management.tsx:200:39
+
+1
+
+​
+

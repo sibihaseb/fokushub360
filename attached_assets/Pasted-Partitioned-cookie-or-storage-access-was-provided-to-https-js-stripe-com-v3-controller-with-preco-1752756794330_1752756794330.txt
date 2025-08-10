@@ -1,0 +1,15 @@
+Partitioned cookie or storage access was provided to “https://js.stripe.com/v3/controller-with-preconnect-0aaa0828d7ec7dafcb9783c9fedb9f0f.html#__shared_params__[version]=basil&apiKey=pk_test_51NwxezAhOiHhM1yQX94ydY61tL8LaN6K1HeVYkAzhAaV36YpuWt9pdJ1XCYLjoxOWn4fsNzENnfeFzC0lFoB7Z3100t4ZBV3JL&apiVersion=2025-03-31.basil&stripeJsId=d2a5ba39-3308-4b79-b89e-de74facc7055&stripeObjId=sobj-a2ea56a7-4f8c-4a9a-8aaf-97f5c1cdeefe&firstStripeInstanceCreatedLatency=3&controllerCount=1&isCheckout=false&stripeJsLoadTime=1752756531997&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=3abf70cf-351d-4f53-a594-94fb4c7fd1ab6c163a&mids[sid]=05468af2-91c5-45e3-8e39-b6296e19b141cac400&referrer=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2Fauth%2Fsign-up&controllerId=__privateStripeController6341” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+controller-with-preconnect-bc0d7dc474b24ea1ef5a8a05be14e090.js:1:22427
+Partitioned cookie or storage access was provided to “https://m.stripe.network/inner.html#url=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2Fauth%2Fsign-up&title=FokusHub360%20-%20Premium%20Virtual%20Focus%20Group%20Platform&referrer=https%3A%2F%2Freplit.com%2F&muid=3abf70cf-351d-4f53-a594-94fb4c7fd1ab6c163a&sid=05468af2-91c5-45e3-8e39-b6296e19b141cac400&version=6&preview=false&__shared_params__[version]=basil” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+out-4.5.44.js:1:39660
+Cookie warnings 2
+Cookie “m” will soon be rejected because it is foreign and does not have the “Partitioned“ attribute. 6
+Cookie “m” will soon be rejected because it is foreign and does not have the “Partitioned“ attribute. 3 6
+[vite] hot updated: /src/components/invitation-modal.tsx client:223:19
+[vite] hot updated: /src/index.css?v=KVN7Z30SL9t3AL6_IMN_T client:223:19
+[vite] hot updated: /src/components/invitation-modal.tsx client:223:19
+[vite] hot updated: /src/index.css?v=KVN7Z30SL9t3AL6_IMN_T client:223:19
+
+1
+
+​

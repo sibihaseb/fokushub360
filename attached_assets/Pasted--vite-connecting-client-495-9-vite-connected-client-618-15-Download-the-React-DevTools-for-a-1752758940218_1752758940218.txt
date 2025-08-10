@@ -1,0 +1,39 @@
+
+[vite] connecting... client:495:9
+[vite] connected. client:618:15
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools react-dom.development.js:29895:17
+Partitioned cookie or storage access was provided to “https://js.stripe.com/v3/controller-with-preconnect-0aaa0828d7ec7dafcb9783c9fedb9f0f.html#__shared_params__[version]=basil&apiKey=pk_test_51NwxezAhOiHhM1yQX94ydY61tL8LaN6K1HeVYkAzhAaV36YpuWt9pdJ1XCYLjoxOWn4fsNzENnfeFzC0lFoB7Z3100t4ZBV3JL&apiVersion=2025-03-31.basil&stripeJsId=3aa88f09-b45b-4269-add9-b70ae23714ee&stripeObjId=sobj-7db7e9c5-20d5-4627-9dec-ee8b09ff2a27&firstStripeInstanceCreatedLatency=6&controllerCount=1&isCheckout=false&stripeJsLoadTime=1752758815160&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=3abf70cf-351d-4f53-a594-94fb4c7fd1ab6c163a&mids[sid]=05468af2-91c5-45e3-8e39-b6296e19b141cac400&referrer=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2Fadmin%2Fquestionnaire&controllerId=__privateStripeController4751” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+controller-with-preconnect-bc0d7dc474b24ea1ef5a8a05be14e090.js:1:22427
+Partitioned cookie or storage access was provided to “https://m.stripe.network/inner.html#url=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2Fadmin%2Fquestionnaire&title=FokusHub360%20-%20Premium%20Virtual%20Focus%20Group%20Platform&referrer=https%3A%2F%2Freplit.com%2F&muid=3abf70cf-351d-4f53-a594-94fb4c7fd1ab6c163a&sid=05468af2-91c5-45e3-8e39-b6296e19b141cac400&version=6&preview=false&__shared_params__[version]=basil” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+out-4.5.44.js:1:39660
+Cookie warnings 3
+Uncaught TypeError: users.filter is not a function
+    UserManagement user-management.tsx:197
+    React 13
+user-management.tsx:197:31
+Uncaught TypeError: users.filter is not a function
+    UserManagement user-management.tsx:197
+    React 14
+user-management.tsx:197:31
+The above error occurred in the <UserManagement> component:
+
+UserManagement@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/src/pages/admin/user-management.tsx:49:45
+Route@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=52704906:323:13
+Switch@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=52704906:379:14
+Router@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/src/App.tsx?v=uHptUuL7K8jpYbu06RoNJ:52:48
+Provider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-PLT6GTVM.js?v=52704906:38:47
+TooltipProvider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=52704906:67:7
+QueryClientProvider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=52704906:2804:27
+App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. react-dom.development.js:18704:15
+Uncaught TypeError: users.filter is not a function
+    UserManagement user-management.tsx:197
+    React 11
+user-management.tsx:197:31
+
+1
+
+​
+

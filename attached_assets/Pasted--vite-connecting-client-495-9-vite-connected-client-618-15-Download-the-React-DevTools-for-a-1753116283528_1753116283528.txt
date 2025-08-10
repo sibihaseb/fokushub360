@@ -1,0 +1,56 @@
+
+[vite] connecting... client:495:9
+[vite] connected. client:618:15
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools react-dom.development.js:29895:17
+Partitioned cookie or storage access was provided to “https://js.stripe.com/v3/controller-with-preconnect-5a125e125bbb24d882c0a6f33f679c89.html#__shared_params__[version]=basil&apiKey=pk_test_51NwxezAhOiHhM1yQX94ydY61tL8LaN6K1HeVYkAzhAaV36YpuWt9pdJ1XCYLjoxOWn4fsNzENnfeFzC0lFoB7Z3100t4ZBV3JL&apiVersion=2025-03-31.basil&stripeJsId=acc01f7b-5e22-4b76-94bc-6fcc17519c15&stripeObjId=sobj-740ec1a8-4620-4bcd-a1f3-027795e1e14f&firstStripeInstanceCreatedLatency=3&controllerCount=1&isCheckout=false&stripeJsLoadTime=1753116247460&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=e8a68ac3-bf36-4901-9c7d-7b328bda7c604f5425&mids[sid]=e24f9661-ee41-41fd-bac3-639439d8a10f4dd12e&referrer=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2Fdashboard&controllerId=__privateStripeController4141” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+controller-with-preconnect-6c42774ced1350d667a127e6b6d290ea.js:1:22427
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/dashboard/admin", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T16:44:09.746Z" }
+queryClient.ts:32:11
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/admin/invitation/waitlist", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T16:44:09.749Z" }
+queryClient.ts:32:11
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/invitation/status", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T16:44:09.751Z" }
+queryClient.ts:32:11
+XHRGET
+https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/admin/invitation/waitlist
+[HTTP/1.1 500 Internal Server Error 2155ms]
+
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/admin/users", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T16:44:09.753Z" }
+queryClient.ts:32:11
+XHRGET
+https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/invitation/status
+[HTTP/1.1 500 Internal Server Error 43ms]
+
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/campaigns", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T16:44:09.754Z" }
+queryClient.ts:32:11
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/questionnaire/categories", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T16:44:09.754Z" }
+queryClient.ts:32:11
+📡 API RESPONSE: 
+Object { status: 500, statusText: "Internal Server Error", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/invitation/status" }
+queryClient.ts:55:11
+📡 API RESPONSE: 
+Object { status: 200, statusText: "OK", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/dashboard/admin" }
+queryClient.ts:55:11
+📡 API RESPONSE: 
+Object { status: 200, statusText: "OK", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/admin/users" }
+queryClient.ts:55:11
+📡 API RESPONSE: 
+Object { status: 200, statusText: "OK", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/questionnaire/categories" }
+queryClient.ts:55:11
+📡 API RESPONSE: 
+Object { status: 500, statusText: "Internal Server Error", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/admin/invitation/waitlist" }
+queryClient.ts:55:11
+📡 API RESPONSE: 
+Object { status: 200, statusText: "OK", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/campaigns" }
+queryClient.ts:55:11
+Partitioned cookie or storage access was provided to “https://m.stripe.network/inner.html#url=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2Fdashboard&title=FokusHub360%20-%20Premium%20Virtual%20Focus%20Group%20Platform&referrer=https%3A%2F%2Freplit.com%2F&muid=e8a68ac3-bf36-4901-9c7d-7b328bda7c604f5425&sid=e24f9661-ee41-41fd-bac3-639439d8a10f4dd12e&version=6&preview=false&__shared_params__[version]=basil” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+out-4.5.44.js:1:39660
+Cookie warnings 3
+
+​
+

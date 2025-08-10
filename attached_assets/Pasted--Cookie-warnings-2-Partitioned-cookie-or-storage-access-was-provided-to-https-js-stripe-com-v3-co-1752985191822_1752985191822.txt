@@ -1,0 +1,92 @@
+
+Cookie warnings 2
+Partitioned cookie or storage access was provided to “https://js.stripe.com/v3/controller-with-preconnect-5a125e125bbb24d882c0a6f33f679c89.html#__shared_params__[version]=basil&apiKey=pk_test_51NwxezAhOiHhM1yQX94ydY61tL8LaN6K1HeVYkAzhAaV36YpuWt9pdJ1XCYLjoxOWn4fsNzENnfeFzC0lFoB7Z3100t4ZBV3JL&apiVersion=2025-03-31.basil&stripeJsId=beb25495-991a-451c-a179-31915825616f&stripeObjId=sobj-342cdcee-9c52-4eca-a4e0-a25f5b0d1ea2&firstStripeInstanceCreatedLatency=4&controllerCount=1&isCheckout=false&stripeJsLoadTime=1752985146650&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=2be6a5bf-c90c-45a1-b6ff-253a03bf69f52a3f3a&mids[sid]=d61a7d9d-ebfa-4b51-bfb0-b0119a5b9a5a69ab42&referrer=https%3A%2F%2Ffokushub360.com%2Fprofile&controllerId=__privateStripeController5391” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+controller-with-preconnect-6c42774ced1350d667a127e6b6d290ea.js:1:22427
+User: 
+Object { id: 59, email: "love@aol.com", firstName: "Love", lastName: "Tomas", role: "participant", profileImageUrl: null, isActive: true, isBanned: false, banReason: null, isVerified: false, … }
+index-DrFcQZgs.js:1426:149689
+Profile loading state: 
+Object { isLoading: true, profile: undefined, error: null }
+index-DrFcQZgs.js:1426:149712
+User: 
+Object { id: 59, email: "love@aol.com", firstName: "Love", lastName: "Tomas", role: "participant", profileImageUrl: null, isActive: true, isBanned: false, banReason: null, isVerified: false, … }
+index-DrFcQZgs.js:1426:149689
+Profile loading state: 
+Object { isLoading: false, profile: undefined, error: Error }
+index-DrFcQZgs.js:1426:149712
+Partitioned cookie or storage access was provided to “https://m.stripe.network/inner.html#url=https%3A%2F%2Ffokushub360.com%2Fprofile&title=FokusHub360%20-%20Premium%20Virtual%20Focus%20Group%20Platform&referrer=https%3A%2F%2Ffokushub360.com%2Fdashboard&muid=2be6a5bf-c90c-45a1-b6ff-253a03bf69f52a3f3a&sid=d61a7d9d-ebfa-4b51-bfb0-b0119a5b9a5a69ab42&version=6&preview=false&__shared_params__[version]=basil” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+out-4.5.44.js:1:39660
+User: 
+Object { id: 59, email: "love@aol.com", firstName: "Love", lastName: "Tomas", role: "participant", profileImageUrl: null, isActive: true, isBanned: false, banReason: null, isVerified: false, … }
+​
+banReason: null
+​
+createdAt: "2025-07-20T03:39:45.917Z"
+​
+customFeesEnabled: false
+​
+email: "love@aol.com"
+​
+firstName: "Love"
+​
+id: 59
+​
+isActive: true
+​
+isBanned: false
+​
+isVerified: false
+​
+lastLogin: "2025-07-20T03:39:45.917Z"
+​
+lastName: "Tomas"
+​
+lastQuestionnaireReminder: null
+​
+lastReminderSent: null
+​
+maxWarnings: 3
+​
+platformFeeAmount: "0.00"
+​
+platformFeePercentage: "0.00"
+​
+processingFeePercentage: "3.50"
+​
+profileImageUrl: null
+​
+questionnaireCompleted: true
+​
+questionnaireCompletionPercentage: 0
+​
+questionnaireHealthStatus: "poor"
+​
+questionnaireReminderCount: 0
+​
+reminderCount: 0
+​
+role: "participant"
+​
+sessionDuration: 60
+​
+updatedAt: "2025-07-20T03:41:19.056Z"
+​
+verificationDate: null
+​
+verificationDocuments: null
+​
+verificationStatus: "pending"
+​
+verifiedBy: null
+​
+warningCount: 0
+​
+<prototype>: Object { … }
+index-DrFcQZgs.js:1426:149689
+Profile loading state: 
+Object { isLoading: false, profile: undefined, error: Error }
+index-DrFcQZgs.js:1426:149712
+Cookie warnings 2
+
+​
+

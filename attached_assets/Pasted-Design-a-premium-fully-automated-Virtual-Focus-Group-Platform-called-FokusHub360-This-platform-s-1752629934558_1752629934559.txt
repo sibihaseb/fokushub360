@@ -1,0 +1,71 @@
+Design a premium, fully automated Virtual Focus Group Platform called “FokusHub360.”
+This platform should allow users to pay for market feedback on digital products like movies, trailers, posters, book covers, app/web designs, logos, and more.
+
+Please include:
+
+🔑 Core User Roles
+	•	Client (Buyer): Uploads content, sets audience and questions, pays for results.
+	•	Participant: Completes detailed profile, gets matched, provides feedback, receives rewards.
+	•	Manager: Assigned to projects, can moderate, invite, or run live sessions.
+	•	Admin/Super Admin: Controls pricing, features, user access, forms, analytics, keys (Stripe, Resend, OpenAI), and automation settings.
+
+🧠 AI Automation
+	•	AI-based participant matching using profile tags (demographics, lifestyle, beliefs, behavior).
+	•	AI-generated reports: summaries, heatmaps, sentiment/emotion analysis, keyword insights.
+	•	AI question suggestions and low-participation triggers.
+
+📋 Participant Profile System
+	•	Modular, editable sign-up form with 100+ question options across categories: demographics, lifestyle, beliefs, content habits, behavior.
+	•	Admin can enable/disable/add categories.
+
+🎯 Campaign Creation (Client Side)
+	•	Upload images, videos, audio, links (stored securely on Wasabi).
+	•	Watermarking toggle.
+	•	Set custom or AI-based target audience.
+	•	Ask structured or freeform questions.
+	•	Choose participant quantity (start at 10, scale to 1,000+).
+	•	Choose reward type (cash, gift, product, etc.).
+	•	Select report level (basic or advanced).
+
+📈 Reporting
+	•	Real-time dashboards, downloadable reports (PDF, CSV, slides).
+	•	Includes sentiment charts, keyword clouds, top insights, and AI suggestions.
+
+🧩 Focus Group Workflow
+	1.	Client sets up group and uploads assets.
+	2.	Participants are matched and invited (with 24–72h limit).
+	3.	Participants complete feedback form.
+	4.	Manager can monitor or host live.
+	5.	System generates reports for client.
+
+🧑‍💼 Dashboards
+	•	Client: Wizard, live feedback, reports, engagement tracker, message center.
+	•	Manager: Edit forms, invite users, view metrics.
+	•	Admin: Global view, user management, form builder, pricing tiers, feature toggles, analytics.
+
+🌐 Landing Page
+	•	Brand: “FokusHub360”
+	•	Premium, modern UI
+	•	CTA buttons: Create Focus Group, Join as Participant, Sign In
+	•	Feature highlights (AI, automation, reports, use cases)
+	•	Carousel of testimonials
+	•	Pricing table for basic/premium plans
+
+🚀 Enhancements
+	•	Supabase backend integration
+	•	Stripe, OpenAI, Resend key management
+	•	Webhooks/API-ready
+	•	Mobile app
+	•	Gamified badges/levels
+	•	Real-time feedback wall
+	•	Participant history & ratings
+	•	White-label option for studios/agencies
+	•	AI voice transcription
+	•	Beautiful AI-driven landing page and matching system
+
+Please return:
+	•	Full platform UX/UI structure
+	•	Visuals or page layouts (if available)
+	•	Landing page copy
+	•	Technical stack recommendations
+	•	Optional: branding or logo concept for “FokusHub360”

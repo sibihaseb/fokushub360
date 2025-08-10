@@ -1,0 +1,213 @@
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 401 (Unauthorized) (save-partial, line 0)
+[Error] Auto-save failed: – Error: 401: {"message":"Access token required"}
+Error: 401: {"message":"Access token required"}
+	(anonymous function) (eruda.js:2:135522)
+	(anonymous function) (onboarding.tsx:557)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 401 (Unauthorized) (save-partial, line 0)
+[Error] Auto-save failed: – Error: 401: {"message":"Access token required"}
+Error: 401: {"message":"Access token required"}
+	(anonymous function) (eruda.js:2:135522)
+	(anonymous function) (onboarding.tsx:557)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 401 (Unauthorized) (save-partial, line 0)
+[Error] Auto-save failed: – Error: 401: {"message":"Access token required"}
+Error: 401: {"message":"Access token required"}
+	(anonymous function) (eruda.js:2:135522)
+	(anonymous function) (onboarding.tsx:557)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 401 (Unauthorized) (save-partial, line 0)
+[Error] Auto-save failed: – Error: 401: {"message":"Access token required"}
+Error: 401: {"message":"Access token required"}
+	(anonymous function) (eruda.js:2:135522)
+	(anonymous function) (onboarding.tsx:557)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 401 (Unauthorized) (save-partial, line 0)
+[Error] Auto-save failed: – Error: 401: {"message":"Access token required"}
+Error: 401: {"message":"Access token required"}
+	(anonymous function) (eruda.js:2:135522)
+	(anonymous function) (onboarding.tsx:557)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 401 (Unauthorized) (save-partial, line 0)
+[Error] Auto-save failed: – Error: 401: {"message":"Access token required"}
+Error: 401: {"message":"Access token required"}
+	(anonymous function) (eruda.js:2:135522)
+	(anonymous function) (onboarding.tsx:557)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 401 (Unauthorized) (save-partial, line 0)
+[Error] Auto-save failed: – Error: 401: {"message":"Access token required"}
+Error: 401: {"message":"Access token required"}
+	(anonymous function) (eruda.js:2:135522)
+	(anonymous function) (onboarding.tsx:557)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 401 (Unauthorized) (save-partial, line 0)
+[Error] Auto-save failed: – Error: 401: {"message":"Access token required"}
+Error: 401: {"message":"Access token required"}
+	(anonymous function) (eruda.js:2:135522)
+	(anonymous function) (onboarding.tsx:557)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 401 (Unauthorized) (save-partial, line 0)
+[Error] Auto-save failed: – Error: 401: {"message":"Access token required"}
+Error: 401: {"message":"Access token required"}
+	(anonymous function) (eruda.js:2:135522)
+	(anonymous function) (onboarding.tsx:557)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 401 (Unauthorized) (bulk-responses, line 0)
+[Log] stallwart: failed ping 1 (stallwart.build.js, line 1)
+[Log] stallwart: failed ping 2 (stallwart.build.js, line 1)
+[Log] stallwart: failed ping 3 (stallwart.build.js, line 1)
+[Log] stallwart: failed ping 4 (stallwart.build.js, line 1)
+[Log] stallwart: failed ping 5 (stallwart.build.js, line 1)
+[Log] stallwart: session stalled (stallwart.build.js, line 1)
+> Selected Element
+< <div data-replit-metadata="client/src/pages/onboarding.tsx:792:6" data-component-name="div" class="max-w-4xl mx-auto">…</div>
+[Error] Failed to load resource: the server responded with a status of 404 () (20dd27076eafc880.css.map, line 0)

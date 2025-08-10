@@ -1,0 +1,40 @@
+
+[vite] connecting... client:495:9
+[vite] connected. client:618:15
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools react-dom.development.js:29895:17
+Partitioned cookie or storage access was provided to “https://js.stripe.com/v3/controller-with-preconnect-f476e3f4b0c3b736fbeeba0d4568d3b5.html#__shared_params__[version]=basil&apiKey=pk_test_51NwxezAhOiHhM1yQX94ydY61tL8LaN6K1HeVYkAzhAaV36YpuWt9pdJ1XCYLjoxOWn4fsNzENnfeFzC0lFoB7Z3100t4ZBV3JL&apiVersion=2025-03-31.basil&stripeJsId=825f7cee-7085-421c-8ec5-d3d78ca5c3f6&stripeObjId=sobj-4fe7ad7a-d048-4f3f-b3f6-617789581a57&firstStripeInstanceCreatedLatency=3&controllerCount=1&isCheckout=false&stripeJsLoadTime=1752808808250&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=3abf70cf-351d-4f53-a594-94fb4c7fd1ab6c163a&mids[sid]=d1396821-61b6-4a71-ae93-ec3248276f55e9c785&referrer=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2Fdashboard%2Fadmin&controllerId=__privateStripeController4531” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+controller-with-preconnect-0d1ab56245210e05d8f4cc5a3468c9b1.js:1:22427
+Uncaught ReferenceError: Textarea is not defined
+    AdminDashboard admin-dashboard.tsx:1137
+    React 13
+admin-dashboard.tsx:1137:22
+Uncaught ReferenceError: Textarea is not defined
+    AdminDashboard admin-dashboard.tsx:1137
+    React 14
+admin-dashboard.tsx:1137:22
+The above error occurred in the <AdminDashboard> component:
+
+AdminDashboard@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/src/pages/dashboard/admin-dashboard.tsx:75:21
+Route@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=57d307ca:323:13
+Switch@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=57d307ca:379:14
+Router@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/src/App.tsx?v=VSq7sOHr0uyb76K-iX4r0:55:48
+Provider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-PLT6GTVM.js?v=57d307ca:38:47
+TooltipProvider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=57d307ca:69:7
+QueryClientProvider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=57d307ca:2804:27
+App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. react-dom.development.js:18704:15
+    React 13
+Uncaught ReferenceError: Textarea is not defined
+    AdminDashboard admin-dashboard.tsx:1137
+    React 11
+admin-dashboard.tsx:1137:22
+Partitioned cookie or storage access was provided to “https://m.stripe.network/inner.html#url=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2Fdashboard%2Fadmin&title=FokusHub360%20-%20Premium%20Virtual%20Focus%20Group%20Platform&referrer=https%3A%2F%2Freplit.com%2F&muid=3abf70cf-351d-4f53-a594-94fb4c7fd1ab6c163a&sid=d1396821-61b6-4a71-ae93-ec3248276f55e9c785&version=6&preview=false&__shared_params__[version]=basil” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+out-4.5.44.js:1:39660
+Cookie warnings 2
+
+1
+
+​
+

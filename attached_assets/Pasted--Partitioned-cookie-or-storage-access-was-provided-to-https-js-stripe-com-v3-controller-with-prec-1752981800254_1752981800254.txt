@@ -1,0 +1,75 @@
+
+Partitioned cookie or storage access was provided to “https://js.stripe.com/v3/controller-with-preconnect-5a125e125bbb24d882c0a6f33f679c89.html#__shared_params__[version]=basil&apiKey=pk_test_51NwxezAhOiHhM1yQX94ydY61tL8LaN6K1HeVYkAzhAaV36YpuWt9pdJ1XCYLjoxOWn4fsNzENnfeFzC0lFoB7Z3100t4ZBV3JL&apiVersion=2025-03-31.basil&stripeJsId=26113c7b-def8-4e9f-b151-1f28875f9c92&stripeObjId=sobj-c14b4c0f-d1a6-42f9-9682-e4ac9ddbe868&firstStripeInstanceCreatedLatency=4&controllerCount=1&isCheckout=false&stripeJsLoadTime=1752981565912&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=2be6a5bf-c90c-45a1-b6ff-253a03bf69f52a3f3a&mids[sid]=d61a7d9d-ebfa-4b51-bfb0-b0119a5b9a5a69ab42&referrer=https%3A%2F%2Ffokushub360.com%2Fauth%2Fsign-up&controllerId=__privateStripeController6091” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+controller-with-preconnect-6c42774ced1350d667a127e6b6d290ea.js:1:22427
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: terms -> terms_of_service, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: terms -> terms_of_service, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: terms -> terms_of_service, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: terms -> terms_of_service, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: terms -> terms_of_service, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: terms -> terms_of_service, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: terms -> terms_of_service, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: terms -> terms_of_service, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: terms -> terms_of_service, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: terms -> terms_of_service, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: terms -> terms_of_service, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: terms -> terms_of_service, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: privacy -> privacy_policy, found: true 4 index-BWwguYII.js:939:764
+Getting document for type: gdpr_rights -> data_rights, found: true 4 index-BWwguYII.js:939:764
+Auto-save failed: Error: Failed to save profile data
+    bM https://fokushub360.com/assets/index-BWwguYII.js:48
+index-BWwguYII.js:1426:32286
+Auto-save failed: Error: Failed to save profile data
+    bM https://fokushub360.com/assets/index-BWwguYII.js:48
+index-BWwguYII.js:1426:32286
+Auto-save failed: Error: Failed to save profile data
+    bM https://fokushub360.com/assets/index-BWwguYII.js:48
+index-BWwguYII.js:1426:32286
+Auto-save failed: Error: Failed to save profile data
+    bM https://fokushub360.com/assets/index-BWwguYII.js:48
+index-BWwguYII.js:1426:32286
+Auto-save failed: Error: Failed to save profile data
+    bM https://fokushub360.com/assets/index-BWwguYII.js:48
+index-BWwguYII.js:1426:32286
+Auto-save failed: Error: Failed to save profile data
+    bM https://fokushub360.com/assets/index-BWwguYII.js:48
+index-BWwguYII.js:1426:32286
+Auto-save failed: Error: Failed to save profile data
+    bM https://fokushub360.com/assets/index-BWwguYII.js:48
+index-BWwguYII.js:1426:32286
+Auto-save failed: Error: Failed to save profile data
+    bM https://fokushub360.com/assets/index-BWwguYII.js:48
+index-BWwguYII.js:1426:32286
+Auto-save failed: Error: Failed to save profile data
+    bM https://fokushub360.com/assets/index-BWwguYII.js:48
+index-BWwguYII.js:1426:32286
+    M https://fokushub360.com/assets/index-BWwguYII.js:1426
+Auto-save failed: Error: Failed to save profile data
+    bM https://fokushub360.com/assets/index-BWwguYII.js:48
+index-BWwguYII.js:1426:32286
+
+​
+

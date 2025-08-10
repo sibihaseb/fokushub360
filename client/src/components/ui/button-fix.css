@@ -1,0 +1,36 @@
+/* Fix for admin button visibility issues */
+.admin-pages button[data-variant="outline"] {
+  color: #e5e7eb !important;
+  border-color: #9ca3af !important;
+}
+
+.admin-pages button[data-variant="outline"]:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+}
+
+/* Specific color overrides for different button types */
+.admin-pages .btn-edit {
+  color: #60a5fa !important;
+  border-color: #60a5fa !important;
+}
+
+.admin-pages .btn-delete {
+  color: #f87171 !important;
+  border-color: #f87171 !important;
+}
+
+.admin-pages .btn-ban {
+  color: #fbbf24 !important;
+  border-color: #fbbf24 !important;
+}
+
+.admin-pages .btn-unban {
+  color: #34d399 !important;
+  border-color: #34d399 !important;
+}
+
+.admin-pages .btn-debug {
+  color: #a78bfa !important;
+  border-color: #a78bfa !important;
+}

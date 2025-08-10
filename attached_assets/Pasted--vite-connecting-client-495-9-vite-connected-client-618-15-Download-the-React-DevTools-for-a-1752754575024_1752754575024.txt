@@ -1,0 +1,47 @@
+
+[vite] connecting... client:495:9
+[vite] connected. client:618:15
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools react-dom.development.js:29895:17
+Partitioned cookie or storage access was provided to “https://js.stripe.com/v3/controller-with-preconnect-0aaa0828d7ec7dafcb9783c9fedb9f0f.html#__shared_params__[version]=basil&apiKey=pk_test_51NwxezAhOiHhM1yQX94ydY61tL8LaN6K1HeVYkAzhAaV36YpuWt9pdJ1XCYLjoxOWn4fsNzENnfeFzC0lFoB7Z3100t4ZBV3JL&apiVersion=2025-03-31.basil&stripeJsId=aeea4424-e7b4-40c8-83a9-65461aeb8b66&stripeObjId=sobj-191791cb-544d-4e39-8fda-1cf9fcada014&firstStripeInstanceCreatedLatency=4&controllerCount=1&isCheckout=false&stripeJsLoadTime=1752754333070&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=3abf70cf-351d-4f53-a594-94fb4c7fd1ab6c163a&mids[sid]=NA&referrer=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2F&controllerId=__privateStripeController9061” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+controller-with-preconnect-bc0d7dc474b24ea1ef5a8a05be14e090.js:1:22427
+A resource is blocked by OpaqueResponseBlocking, please check browser console for details. photo-1494790108755-2616b612b789
+Partitioned cookie or storage access was provided to “https://m.stripe.network/inner.html#url=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2F&title=FokusHub360%20-%20Premium%20Virtual%20Focus%20Group%20Platform&referrer=https%3A%2F%2Freplit.com%2F&muid=3abf70cf-351d-4f53-a594-94fb4c7fd1ab6c163a&sid=NA&version=6&preview=false&__shared_params__[version]=basil” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+out-4.5.44.js:1:39660
+Cookie warnings 3
+Warning: You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
+input
+_c@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/src/components/ui/input.tsx:20:8
+div
+div
+div
+div
+_c9@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/src/components/ui/card.tsx:114:9
+div
+_c@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/src/components/ui/card.tsx:20:8
+div
+Primitive</Node<@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-PALV7G7K.js?v=52704906:42:44
+Presence@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-KHCZ25XA.js?v=52704906:24:33
+TabsContent<@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tabs.js?v=52704906:174:75
+_c5@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/src/components/ui/tabs.tsx:72:9
+div
+Primitive</Node<@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-PALV7G7K.js?v=52704906:42:44
+Provider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-PLT6GTVM.js?v=52704906:38:47
+Tabs<@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tabs.js?v=52704906:60:9
+div
+div
+AdminDashboard@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/src/pages/dashboard/admin-dashboard.tsx:71:21
+Route@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=52704906:323:13
+Switch@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=52704906:379:14
+Router@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/src/App.tsx?v=7SBSGCnq3mrnydBIEcimT:51:48
+Provider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-PLT6GTVM.js?v=52704906:38:47
+TooltipProvider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=52704906:67:7
+QueryClientProvider@https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=52704906:2804:27
+App 3 react-dom.development.js:86:30
+    React 14
+
+Iterate on your code faster with the new multi-line editor mode. Use Enter to add new lines and Cmd+Enter to run.
+
+1
+
+​
+

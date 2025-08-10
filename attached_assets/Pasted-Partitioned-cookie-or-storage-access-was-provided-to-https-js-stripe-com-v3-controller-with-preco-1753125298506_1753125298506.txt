@@ -1,0 +1,96 @@
+Partitioned cookie or storage access was provided to “https://js.stripe.com/v3/controller-with-preconnect-5a125e125bbb24d882c0a6f33f679c89.html#__shared_params__[version]=basil&apiKey=pk_test_51NwxezAhOiHhM1yQX94ydY61tL8LaN6K1HeVYkAzhAaV36YpuWt9pdJ1XCYLjoxOWn4fsNzENnfeFzC0lFoB7Z3100t4ZBV3JL&apiVersion=2025-03-31.basil&stripeJsId=10fef52d-cd3e-463e-8388-4a4d7e95ac03&stripeObjId=sobj-e227c33c-8441-4e9c-94fb-29542b42a124&firstStripeInstanceCreatedLatency=5&controllerCount=1&isCheckout=false&stripeJsLoadTime=1753125229773&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=e8a68ac3-bf36-4901-9c7d-7b328bda7c604f5425&mids[sid]=NA&referrer=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2Fdashboard&controllerId=__privateStripeController4371” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+controller-with-preconnect-6c42774ced1350d667a127e6b6d290ea.js:1:22427
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/dashboard/admin", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T19:13:50.098Z" }
+queryClient.ts:32:11
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/admin/invitation/waitlist", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T19:13:50.099Z" }
+queryClient.ts:32:11
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/invitation/status", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T19:13:50.100Z" }
+queryClient.ts:32:11
+XHRGET
+https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/admin/invitation/waitlist
+[HTTP/1.1 500 Internal Server Error 62ms]
+
+XHRGET
+https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/invitation/status
+[HTTP/1.1 500 Internal Server Error 39ms]
+
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/admin/users", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T19:13:50.101Z" }
+queryClient.ts:32:11
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/campaigns", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T19:13:50.101Z" }
+queryClient.ts:32:11
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/questionnaire/categories", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T19:13:50.102Z" }
+queryClient.ts:32:11
+📡 API RESPONSE: 
+Object { status: 500, statusText: "Internal Server Error", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/invitation/status" }
+queryClient.ts:55:11
+📡 API RESPONSE: 
+Object { status: 500, statusText: "Internal Server Error", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/admin/invitation/waitlist" }
+queryClient.ts:55:11
+📡 API RESPONSE: 
+Object { status: 200, statusText: "OK", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/questionnaire/categories" }
+queryClient.ts:55:11
+📡 API RESPONSE: 
+Object { status: 200, statusText: "OK", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/admin/users" }
+queryClient.ts:55:11
+📡 API RESPONSE: 
+Object { status: 200, statusText: "OK", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/campaigns" }
+queryClient.ts:55:11
+📡 API RESPONSE: 
+Object { status: 200, statusText: "OK", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/dashboard/admin" }
+queryClient.ts:55:11
+AdminFeeManagement component rendered admin-fee-management.tsx:31:11
+Fee management loading... admin-fee-management.tsx:97:13
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/admin/fees/global", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T19:13:52.511Z" }
+queryClient.ts:32:11
+📡 API RESPONSE: 
+Object { status: 200, statusText: "OK", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/admin/fees/global" }
+queryClient.ts:55:11
+AdminFeeManagement component rendered admin-fee-management.tsx:31:11
+About to render fee management, globalSettings: 
+Object { processingFeePercentage: 3.5, platformFeeAmount: 0, platformFeePercentage: 0 }
+admin-fee-management.tsx:111:11
+Partitioned cookie or storage access was provided to “https://m.stripe.network/inner.html#url=https%3A%2F%2F520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev%2Fdashboard&title=FokusHub360%20-%20Premium%20Virtual%20Focus%20Group%20Platform&referrer=https%3A%2F%2Freplit.com%2F&muid=e8a68ac3-bf36-4901-9c7d-7b328bda7c604f5425&sid=NA&version=6&preview=false&__shared_params__[version]=basil” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+out-4.5.44.js:1:39660
+Cookie warnings 3
+AdminFeeManagement component rendered admin-fee-management.tsx:31:11
+About to render fee management, globalSettings: 
+Object { processingFeePercentage: 3.5, platformFeeAmount: 0, platformFeePercentage: 2 }
+admin-fee-management.tsx:111:11
+Save button clicked! Global settings: 
+Object { processingFeePercentage: 3.5, platformFeeAmount: 0, platformFeePercentage: 2 }
+admin-fee-management.tsx:255:29
+Saving global settings: 
+Object { processingFeePercentage: 3.5, platformFeeAmount: 0, platformFeePercentage: 2 }
+admin-fee-management.tsx:77:13
+🌐 API REQUEST: 
+Object { method: "POST", url: "/api/admin/fees/global", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T19:14:02.308Z" }
+queryClient.ts:32:11
+AdminFeeManagement component rendered admin-fee-management.tsx:31:11
+About to render fee management, globalSettings: 
+Object { processingFeePercentage: 3.5, platformFeeAmount: 0, platformFeePercentage: 2 }
+admin-fee-management.tsx:111:11
+📡 API RESPONSE: 
+Object { status: 200, statusText: "OK", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/admin/fees/global" }
+queryClient.ts:55:11
+🌐 API REQUEST: 
+Object { method: "GET", url: "/api/admin/fees/global", hasToken: true, tokenPrefix: "eyJhbGciOiJIUzI1NiIs...", timestamp: "2025-07-21T19:14:02.711Z" }
+queryClient.ts:32:11
+AdminFeeManagement component rendered admin-fee-management.tsx:31:11
+Fee management loading... admin-fee-management.tsx:97:13
+📡 API RESPONSE: 
+Object { status: 200, statusText: "OK", url: "https://520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev/api/admin/fees/global" }
+queryClient.ts:55:11
+AdminFeeManagement component rendered admin-fee-management.tsx:31:11
+About to render fee management, globalSettings: 
+Object { processingFeePercentage: 3.5, platformFeeAmount: 0, platformFeePercentage: 2 }
+admin-fee-management.tsx:111:11
+
+​
+

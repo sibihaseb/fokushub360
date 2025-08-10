@@ -1,0 +1,199 @@
+[Warning] 1740 console messages are not shown.
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 503 (Service Unavailable) (520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev, line 0)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 503 (Service Unavailable) (520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev, line 0)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 503 (Service Unavailable) (520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev, line 0)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 503 (Service Unavailable) (520ab537-6c40-45f9-b219-bc5dba3e4f20-00-1ocw3ol9gmatm.janeway.replit.dev, line 0)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] WebSocket connection to 'wss://eval.janeway.platform.replit.com/wsv2/v2.public.Q2dZSXdxemN3d1lTQmdqaHlOekRCaUlIYW1GdVpYZGhlVEFBT3BFQ0NpUTFNakJoWWpVek55MDJZelF3TFRRMVpqa3RZakl4T1MxaVl6VmtZbUV6WlRSbU1qQVNBMjVwZUJvWmNtVndiR2wwTFhKbGNHd3RabWxzWlhNdGFtRnVaWGRoZVNJT1IzSnZhMEYxZEdoQ2NtbGtaMlVxRDBadmNtTmxVbVZqYjI1RVpXeDBZVUpYQ2hweVpYQnNhWFF0Y21Wd2JDMWliRzlqYTNNdGFtRnVaWGRoZVJJWWNtVndiR2wwTFhKbGNHd3RiV1YwWVMxcVlXNWxkMkY1R2g5eVpYQnNhWFF0YldGeVoyRnlhVzVsTFdKc2IyTnJjeTFxWVc1bGQyRjVTZ2NJbHRPN0ZSQUJVQUJhRDJsdWRHVnVkRjlpZFhOcGJtVnpjMW9VYjI1aWIyRnlaR2x1WjE5eWIyeGxYMlY0WldOYUcyOXVZbTloY21ScGJtZGZhbTlpWDJWdWRISmxjSEpsYm1WMWNuZ0FVaU1JQVJDQWdJQ0FJQmtBQUFBQUFBQVFRQ0VBQUFBQUFBQVFRQ2lBZ0lDQXlBRXdBbUFEYWhZSWx0TzdGUklQUm05eVkyVlNaV052YmtSbGJIUmhnZ0VDS2dDYUFRb0tDREF1TUM0eE5UQXlvQUVCnB1DIcQSPypdePWHqGuiNz6IoZgcZbTZkIKHjUDIwaFj9WOfB-GYPZIMbj4fDRcsW-me6Zqq9NmCFMaIIAggCw.Q2dad2NtOWtPak1pQ25KbGNHeHBkQzVqYjIwPQ' failed: The network connection was lost.
+[Error] WebSocket connection to 'wss://eval.janeway.platform.replit.com/wsv2/v2.public.Q2dZSXhkWGN3d1lTQmdqazhkekRCaUlIYW1GdVpYZGhlVEFBT3BFQ0NpUTFNakJoWWpVek55MDJZelF3TFRRMVpqa3RZakl4T1MxaVl6VmtZbUV6WlRSbU1qQVNBMjVwZUJvWmNtVndiR2wwTFhKbGNHd3RabWxzWlhNdGFtRnVaWGRoZVNJT1IzSnZhMEYxZEdoQ2NtbGtaMlVxRDBadmNtTmxVbVZqYjI1RVpXeDBZVUpYQ2hweVpYQnNhWFF0Y21Wd2JDMWliRzlqYTNNdGFtRnVaWGRoZVJJWWNtVndiR2wwTFhKbGNHd3RiV1YwWVMxcVlXNWxkMkY1R2g5eVpYQnNhWFF0YldGeVoyRnlhVzVsTFdKc2IyTnJjeTFxWVc1bGQyRjVTZ2NJbHRPN0ZSQUJVQUJhRDJsdWRHVnVkRjlpZFhOcGJtVnpjMW9VYjI1aWIyRnlaR2x1WjE5eWIyeGxYMlY0WldOYUcyOXVZbTloY21ScGJtZGZhbTlpWDJWdWRISmxjSEpsYm1WMWNuZ0FVaU1JQVJDQWdJQ0FJQmtBQUFBQUFBQVFRQ0VBQUFBQUFBQVFRQ2lBZ0lDQXlBRXdBbUFBYWhZSWx0TzdGUklQUm05eVkyVlNaV052YmtSbGJIUmhnZ0VDS2dDYUFRb0tDREF1TUM0eE5UQXlvQUVCTuDu2OEfEUGsgIe5QKhzdlVvWJ343vsBJ-00sBdNa77LMEKcEkITzH_0QrZ7cuSvLziuUFbP4bzKDp1ggA8ZAg.Q2dad2NtOWtPak1pQ25KbGNHeHBkQzVqYjIwPQ' failed: The network connection was lost.
+[Error] WebSocket connection to 'wss://eval.janeway.platform.replit.com/wsv2/v2.public.Q2dZSTVwWGN3d1lTQmdpRnN0ekRCaUlIYW1GdVpYZGhlVEFBT3BFQ0NpUTFNakJoWWpVek55MDJZelF3TFRRMVpqa3RZakl4T1MxaVl6VmtZbUV6WlRSbU1qQVNBMjVwZUJvWmNtVndiR2wwTFhKbGNHd3RabWxzWlhNdGFtRnVaWGRoZVNJT1IzSnZhMEYxZEdoQ2NtbGtaMlVxRDBadmNtTmxVbVZqYjI1RVpXeDBZVUpYQ2hweVpYQnNhWFF0Y21Wd2JDMWliRzlqYTNNdGFtRnVaWGRoZVJJWWNtVndiR2wwTFhKbGNHd3RiV1YwWVMxcVlXNWxkMkY1R2g5eVpYQnNhWFF0YldGeVoyRnlhVzVsTFdKc2IyTnJjeTFxWVc1bGQyRjVTZ2NJbHRPN0ZSQUJVQUJhRDJsdWRHVnVkRjlpZFhOcGJtVnpjMW9VYjI1aWIyRnlaR2x1WjE5eWIyeGxYMlY0WldOYUcyOXVZbTloY21ScGJtZGZhbTlpWDJWdWRISmxjSEpsYm1WMWNuZ0FVaU1JQVJDQWdJQ0FJQmtBQUFBQUFBQVFRQ0VBQUFBQUFBQVFRQ2lBZ0lDQXlBRXdBbUFBYWhZSWx0TzdGUklQUm05eVkyVlNaV052YmtSbGJIUmhnZ0VDS2dDYUFRb0tDREF1TUM0eE5UQXlvQUVCijknrv2Wlkx8HuZkgq-7i-aeXDmVqyMJWzCAqJJpMAi631fjO0YzrQLsXfugAIAIQHJeiMlEE6z0H7hve-C1CA.Q2dad2NtOWtPak1pQ25KbGNHeHBkQzVqYjIwPQ' failed: The network connection was lost.
+[Error] WebSocket connection to 'wss://production-chort.replit.com/api/river' failed: The network connection was lost.
+[Error] WebSocket connection to 'wss://production-ai-chat.replit.com/river?auth_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQ1MDE3NDk0LCJ1c2VyVGltZUNyZWF0ZWQiOiIyMDI1LTA3LTE0VDEyOjE2OjA5Ljc2NFoiLCJyZXBsSWQiOiI1MjBhYjUzNy02YzQwLTQ1ZjktYjIxOS1iYzVkYmEzZTRmMjAiLCJtZW1iZXJzaGlwIjoiY29yZSIsImlzc3VlciI6Imh0dHBzOi8vcmVwbGl0LXdlYi1wcm9kLnAucmVwbGl0LmNvbSIsInJvbGVzIjpbImludGVudF9idXNpbmVzcyIsIm9uYm9hcmRpbmdfcm9sZV9leGVjIiwib25ib2FyZGluZ19qb2JfZW50cmVwcmVuZXVyIl0sImNhbldyaXRlIjp0cnVlLCJoYXNSZXBsaXRBaVBybyI6dHJ1ZSwiZmxhZ2dpbmdDb250ZXh0Ijoie1wia2V5XCI6XCJ1c2VyOjQ1MDE3NDk0XCIsXCJraW5kXCI6XCJvd25lclwiLFwicm9sZXNcIjpbXCJpbnRlbnRfYnVzaW5lc3NcIixcIm9uYm9hcmRpbmdfcm9sZV9leGVjXCIsXCJvbmJvYXJkaW5nX2pvYl9lbnRyZXByZW5ldXJcIl0sXCJpc190ZWFtXCI6ZmFsc2UsXCJoYXNfYWdlbnRfYmlsbGluZ192MlwiOnRydWUsXCJtZW1iZXJzaGlwXCI6XCJjb3JlXCJ9IiwiaWF0IjoxNzUyNjQxOTkyLCJleHAiOjE3NTI2NDU1OTJ9.V_Wm937Jci2JwyzJ_3nYAocS4UV7j6qfOADnu9XGUj8kFNLY2cKt3jroVP5RAlgvj3stj3He5KZZu-2SNR-oq6xg-WNTRnD6Zh9Whgkc24DJd_74SukGLp3pAgpAYPi70dLIa1YwBocIBvSlXmIazzja8Dfxsn6lqd79HN4q4aSkzq_fCiGQcZ0-IjDTvp7qngk0kNUr8DUvftAmHAbWASuC47T3ECl-CSmRmDmd2_zvk8oVxvFq_zGFOenFtGli5koH6sufwxIxjw3ARzL7l7Hy8u2MQk4tPTipFsRFF32RsjJtuZeE_Y4VWBVpiA1RxLCNUg1PaN3CknTesE4_7w' failed: The network connection was lost.
+[Error] WebSocket connection to 'wss://production-ai-chat.replit.com/river?auth_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQ1MDE3NDk0LCJ1c2VyVGltZUNyZWF0ZWQiOiIyMDI1LTA3LTE0VDEyOjE2OjA5Ljc2NFoiLCJyZXBsSWQiOiI1MjBhYjUzNy02YzQwLTQ1ZjktYjIxOS1iYzVkYmEzZTRmMjAiLCJtZW1iZXJzaGlwIjoiY29yZSIsImlzc3VlciI6Imh0dHBzOi8vcmVwbGl0LXdlYi1wcm9kLnAucmVwbGl0LmNvbSIsInJvbGVzIjpbImludGVudF9idXNpbmVzcyIsIm9uYm9hcmRpbmdfcm9sZV9leGVjIiwib25ib2FyZGluZ19qb2JfZW50cmVwcmVuZXVyIl0sImNhbldyaXRlIjp0cnVlLCJoYXNSZXBsaXRBaVBybyI6dHJ1ZSwiZmxhZ2dpbmdDb250ZXh0Ijoie1wia2V5XCI6XCJ1c2VyOjQ1MDE3NDk0XCIsXCJraW5kXCI6XCJvd25lclwiLFwicm9sZXNcIjpbXCJpbnRlbnRfYnVzaW5lc3NcIixcIm9uYm9hcmRpbmdfcm9sZV9leGVjXCIsXCJvbmJvYXJkaW5nX2pvYl9lbnRyZXByZW5ldXJcIl0sXCJpc190ZWFtXCI6ZmFsc2UsXCJoYXNfYWdlbnRfYmlsbGluZ192MlwiOnRydWUsXCJtZW1iZXJzaGlwXCI6XCJjb3JlXCJ9IiwiaWF0IjoxNzUyNjQyMTE2LCJleHAiOjE3NTI2NDU3MTZ9.LyC8O6a0TjMJydN9Eb2Hwgg-jvPHtCR-zUGcSMDXIoAu1dE8l9CdJY1sKDM0SB-PNShadTqdt_inqLsH62JE0zvqBlcRwlqGizaOH2lVG2aamOtgTwWdjx4fRvnVSEWKaDby92eMIr4EQz6nweuzjCmhKz1m7KEk-r4LAN9nw6yIUBNj2aOQblbWCVG65fVur2RR0L6erGgIyn2b-V3woPTihh4bkPah8p7Tz1YOnXrcrwv5S8IW30h1wvhEF2XLUrluFOo26wOzfqei_jcKDt7naK8vDmZjFV6bIZzqipIup6PsDCQ_fu_uALi6mWKsiwGBw_PpXtXHO3JAVzEi5w' failed: The network connection was lost.
+[Error] WebSocket connection to 'wss://replit.com/graphql_subscriptions' failed: The network connection was lost.
+[Error] Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation', 'allow-presentation', 'allow-orientation-lock' are invalid sandbox flags.
+	_ (framework-0550d6b2121221ed.js:1:44639)
+	(anonymous function) (framework-0550d6b2121221ed.js:1:143779)
+	uD (framework-0550d6b2121221ed.js:1:147442)
+	uI (framework-0550d6b2121221ed.js:1:140392)
+	uM (framework-0550d6b2121221ed.js:1:140202)
+	uS (framework-0550d6b2121221ed.js:1:135275)
+	C (framework-0550d6b2121221ed.js:1:206185)
+	z (framework-0550d6b2121221ed.js:1:206715)
+[Error] Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation', 'allow-presentation', 'allow-orientation-lock' are invalid sandbox flags. (workspace_iframe.html, line 32)
+[Debug] [vite] connecting... (eruda.js, line 2)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Debug] [vite] connected. (eruda.js, line 2)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 404 () (photo-1494790108755-2616b612b789, line 0)
+[Error] Unable to post message to https://staging.replit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to https://staging.firewalledreplit.com. Recipient has origin https://replit.com.
+
+[Error] Unable to post message to http://localhost:3000. Recipient has origin https://replit.com.
+
+[Error] Failed to load resource: the server responded with a status of 500 (Internal Server Error) (signup, line 0)
+[Log] stallwart: failed ping 1 (stallwart.build.js, line 1)
+[Log] stallwart: failed ping 2 (stallwart.build.js, line 1)
+[Log] stallwart: failed ping 3 (stallwart.build.js, line 1)
+[Log] stallwart: failed ping 4 (stallwart.build.js, line 1)
+[Log] stallwart: failed ping 5 (stallwart.build.js, line 1)
+[Log] stallwart: session stalled (stallwart.build.js, line 1)
+> Selected Element
+< <div data-replit-metadata="client/src/pages/auth/sign-up.tsx:82:4" data-component-name="div" class="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center p-4">…</div>
+[Error] Failed to load resource: the server responded with a status of 404 () (20dd27076eafc880.css.map, line 0)
