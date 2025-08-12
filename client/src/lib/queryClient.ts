@@ -24,7 +24,7 @@ async function throwIfResNotOk(res: Response) {
 export async function apiRequest(
   method: string,
   url: string,
-  data?: unknown | undefined,
+  data?: unknown,
 ): Promise<Response> {
   const token = localStorage.getItem("fokushub_token");
   const headers: Record<string, string> = {};
@@ -41,14 +41,20 @@ export async function apiRequest(
     headers["Authorization"] = `Bearer ${token}`;
   }
   
-  if (data) {
+  let body: BodyInit | undefined;
+
+   if (data instanceof FormData) {
+    // ✅ Don't set Content-Type, browser will handle it with boundary
+    body = data;
+  } else if (data !== undefined) {
     headers["Content-Type"] = "application/json";
+    body = JSON.stringify(data);
   }
 
   const res = await fetch(url, {
     method,
     headers,
-    body: data ? JSON.stringify(data) : undefined,
+    body,
     credentials: "include",
   });
 

@@ -10,11 +10,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { apiRequest } from "@/lib/queryClient";
-import { 
-  Shield, 
-  Upload, 
-  FileText, 
-  CheckCircle, 
+import {
+  Shield,
+  Upload,
+  FileText,
+  CheckCircle,
   AlertCircle,
   Home,
   ArrowRight,
@@ -27,7 +27,7 @@ export default function Verification() {
   const [, setLocation] = useLocation();
   const { user } = useAuth();
   const { toast } = useToast();
-  
+
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState<{
     phoneNumber: string;
@@ -53,7 +53,7 @@ export default function Verification() {
       });
       return;
     }
-    
+
     // Validate file size (max 10MB)
     if (file.size > 10 * 1024 * 1024) {
       toast({
@@ -63,17 +63,17 @@ export default function Verification() {
       });
       return;
     }
-    
+
     setFormData(prev => ({
       ...prev,
       [type]: file
     }));
-    
+
     toast({
       title: `${type === 'idDocument' ? 'ID Document' : 'Selfie'} Uploaded`,
       description: `${file.name} (${(file.size / 1024 / 1024).toFixed(2)}MB) uploaded successfully.`,
     });
-    
+
     console.log(`File uploaded: ${file.name}, Size: ${file.size} bytes, Type: ${file.type}`);
   };
 
@@ -87,7 +87,7 @@ export default function Verification() {
         formDataToSubmit.append('phoneNumber', formData.phoneNumber);
         formDataToSubmit.append('address', formData.address);
         formDataToSubmit.append('additionalInfo', formData.additionalInfo);
-        
+
         if (formData.idDocument) {
           formDataToSubmit.append('idDocument', formData.idDocument);
         }
@@ -99,8 +99,16 @@ export default function Verification() {
         //   method: 'POST',
         //   body: formDataToSubmit,
         // });
-         const response = await apiRequest("POST", "/api/verification/submit", formDataToSubmit);
-         
+        const token = localStorage.getItem("fokushub_token");
+        const response = await fetch('/api/verification/submit', {
+          method: 'POST',
+          body: formDataToSubmit,
+          headers: {
+            Authorization: `Bearer ${token}`,
+          }
+        });
+        //  const response = await apiRequest("POST", "/api/verification/submit", formDataToSubmit);
+
         if (response.ok) {
           toast({
             title: "Verification Submitted",
@@ -149,11 +157,11 @@ export default function Verification() {
               Step {step} of 3
             </Badge>
           </div>
-          
+
           <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
             <Shield className="w-8 h-8 text-white" />
           </div>
-          
+
           <h1 className="text-3xl font-bold text-white mb-2">Identity Verification</h1>
           <p className="text-slate-300">Help us verify your identity to participate in focus groups</p>
         </div>
@@ -185,7 +193,7 @@ export default function Verification() {
                     We need to verify your phone number to ensure you're a real person and can receive campaign notifications.
                   </p>
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="phone" className="text-white">Phone Number</Label>
                   <Input
@@ -210,24 +218,21 @@ export default function Verification() {
                     Accepted formats: JPG, PNG, GIF, WEBP • Max size: 10MB
                   </p>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label className="text-white">Government ID</Label>
-                    <div 
-                      className={`border-2 border-dashed rounded-lg p-6 text-center transition-all duration-200 cursor-pointer ${
-                        formData.idDocument 
-                          ? 'border-emerald-500 bg-emerald-500/10' 
+                    <div
+                      className={`border-2 border-dashed rounded-lg p-6 text-center transition-all duration-200 cursor-pointer ${formData.idDocument
+                          ? 'border-emerald-500 bg-emerald-500/10'
                           : 'border-slate-600 hover:border-slate-500 hover:bg-slate-800/50'
-                      }`}
+                        }`}
                       onClick={() => document.getElementById('idUpload')?.click()}
                     >
-                      <CreditCard className={`w-8 h-8 mx-auto mb-2 ${
-                        formData.idDocument ? 'text-emerald-400' : 'text-slate-400'
-                      }`} />
-                      <p className={`text-sm ${
-                        formData.idDocument ? 'text-emerald-300' : 'text-slate-400'
-                      }`}>
+                      <CreditCard className={`w-8 h-8 mx-auto mb-2 ${formData.idDocument ? 'text-emerald-400' : 'text-slate-400'
+                        }`} />
+                      <p className={`text-sm ${formData.idDocument ? 'text-emerald-300' : 'text-slate-400'
+                        }`}>
                         {formData.idDocument ? `✓ Uploaded: ${formData.idDocument.name}` : 'Click to upload ID'}
                       </p>
                       {formData.idDocument && (
@@ -235,10 +240,10 @@ export default function Verification() {
                           {(formData.idDocument.size / 1024 / 1024).toFixed(2)}MB
                         </p>
                       )}
-                      <input 
+                      <input
                         id="idUpload"
-                        type="file" 
-                        className="hidden" 
+                        type="file"
+                        className="hidden"
                         accept="image/*"
                         onChange={(e) => {
                           const file = e.target.files?.[0];
@@ -247,23 +252,20 @@ export default function Verification() {
                       />
                     </div>
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label className="text-white">Selfie</Label>
-                    <div 
-                      className={`border-2 border-dashed rounded-lg p-6 text-center transition-all duration-200 cursor-pointer ${
-                        formData.selfie 
-                          ? 'border-emerald-500 bg-emerald-500/10' 
+                    <div
+                      className={`border-2 border-dashed rounded-lg p-6 text-center transition-all duration-200 cursor-pointer ${formData.selfie
+                          ? 'border-emerald-500 bg-emerald-500/10'
                           : 'border-slate-600 hover:border-slate-500 hover:bg-slate-800/50'
-                      }`}
+                        }`}
                       onClick={() => document.getElementById('selfieUpload')?.click()}
                     >
-                      <Camera className={`w-8 h-8 mx-auto mb-2 ${
-                        formData.selfie ? 'text-emerald-400' : 'text-slate-400'
-                      }`} />
-                      <p className={`text-sm ${
-                        formData.selfie ? 'text-emerald-300' : 'text-slate-400'
-                      }`}>
+                      <Camera className={`w-8 h-8 mx-auto mb-2 ${formData.selfie ? 'text-emerald-400' : 'text-slate-400'
+                        }`} />
+                      <p className={`text-sm ${formData.selfie ? 'text-emerald-300' : 'text-slate-400'
+                        }`}>
                         {formData.selfie ? `✓ Uploaded: ${formData.selfie.name}` : 'Click to take selfie'}
                       </p>
                       {formData.selfie && (
@@ -271,10 +273,10 @@ export default function Verification() {
                           {(formData.selfie.size / 1024 / 1024).toFixed(2)}MB
                         </p>
                       )}
-                      <input 
+                      <input
                         id="selfieUpload"
-                        type="file" 
-                        className="hidden" 
+                        type="file"
+                        className="hidden"
                         accept="image/*"
                         capture="user"
                         onChange={(e) => {
@@ -285,7 +287,7 @@ export default function Verification() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="address" className="text-white">Address (Optional)</Label>
                   <Textarea
@@ -306,29 +308,29 @@ export default function Verification() {
                     Please review your information before submitting. Our team will review your verification within 24-48 hours.
                   </p>
                 </div>
-                
+
                 <div className="space-y-3">
                   <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
                     <span className="text-slate-300">Phone Number</span>
                     <span className="text-white">{formData.phoneNumber || "Not provided"}</span>
                   </div>
-                  
+
                   <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
                     <span className="text-slate-300">Government ID</span>
                     <span className="text-white">{formData.idDocument ? "Uploaded" : "Not uploaded"}</span>
                   </div>
-                  
+
                   <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
                     <span className="text-slate-300">Selfie</span>
                     <span className="text-white">{formData.selfie ? "Uploaded" : "Not uploaded"}</span>
                   </div>
-                  
+
                   <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
                     <span className="text-slate-300">Address</span>
                     <span className="text-white">{formData.address || "Not provided"}</span>
                   </div>
                 </div>
-                
+
                 <div className="bg-slate-800/30 rounded-lg p-4">
                   <h4 className="text-white font-semibold mb-2">What happens next?</h4>
                   <ul className="text-slate-300 text-sm space-y-1">
@@ -352,7 +354,7 @@ export default function Verification() {
           >
             Skip for Now
           </Button>
-          
+
           <Button
             onClick={handleNext}
             className="bg-emerald-600 hover:bg-emerald-700"

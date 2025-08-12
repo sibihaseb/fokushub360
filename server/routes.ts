@@ -2934,25 +2934,25 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const userRole = req.user!.role;
       
       // Check if user already has a pending verification (unless admin/manager override)
-      const currentUser = await storage.getUser(userId);
-      if (currentUser?.verificationStatus === 'pending' && 
-          userRole !== 'admin' && userRole !== 'manager') {
-        return res.status(400).json({ 
-          message: "Verification already submitted and pending review" 
-        });
-      }
+      // const currentUser = await storage.getUser(userId);
+      // if (currentUser?.verificationStatus === 'pending' && 
+      //     userRole !== 'admin' && userRole !== 'manager') {
+      //   return res.status(400).json({ 
+      //     message: "Verification already submitted and pending review" 
+      //   });
+      // }
       
       // Check if all required documents are uploaded
       const documents = await storage.getVerificationDocuments(userId);
-      const requiredTypes = ['id', 'address', 'selfie'];
-      const uploadedTypes = documents.map(doc => doc.docType);
+      // const requiredTypes = ['id', 'address', 'selfie'];
+      // const uploadedTypes = documents.map(doc => doc.docType);
       
-      const missingTypes = requiredTypes.filter(type => !uploadedTypes.includes(type));
-      if (missingTypes.length > 0) {
-        return res.status(400).json({ 
-          message: `Missing required documents: ${missingTypes.join(', ')}` 
-        });
-      }
+      // const missingTypes = requiredTypes.filter(type => !uploadedTypes.includes(type));
+      // if (missingTypes.length > 0) {
+      //   return res.status(400).json({ 
+      //     message: `Missing required documents: ${missingTypes.join(', ')}` 
+      //   });
+      // }
 
       // Update user verification status
       await storage.updateUserVerificationStatus(userId, 'pending');

@@ -16,7 +16,7 @@ export const users = pgTable("users", {
   isBanned: boolean("is_banned").default(false),
   banReason: text("ban_reason"),
   isVerified: boolean("is_verified").default(false),
-  verificationStatus: varchar("verification_status", { length: 20 }).default("pending"), // pending, approved, rejected
+  verificationStatus: varchar("verification_status", { length: 20 }).default("unverified"), // pending, approved, rejected
   verificationDocuments: jsonb("verification_documents"), // ID, address proof, etc.
   verificationDate: timestamp("verification_date"),
   verifiedBy: integer("verified_by"), // admin who verified
