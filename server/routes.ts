@@ -2897,7 +2897,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const fileName = (req.file as any).key || `${userId}_${docType}_${Date.now()}${path.extname(req.file.originalname)}`;
       const fileUrl = (req.file as any).location || `https://s3.${process.env.WASABI_REGION}.wasabisys.com/${process.env.WASABI_BUCKET}/${fileName}`;
       
-      console.log(`Uploaded ${docType} document to Wasabi: ${fileName} (${req.file.size} bytes)`);
+      console.log(`Uploaded ${docType} document to Wasabi:  with ${userId}  ${fileName} (${req.file.size} bytes)`);
       
       // Store verification document info in database with Wasabi URL
       await storage.storeVerificationDocument({
@@ -2908,7 +2908,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
         fileSize: req.file.size,
         mimeType: req.file.mimetype,
         status: 'pending',
-        wasabiUrl: fileUrl
+       
+       
       });
 
       res.json({ 
@@ -2921,6 +2922,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         fileName: req.file.originalname,
         docType,
         wasabiUrl: fileUrl
+       
       });
     } catch (error) {
       console.error("Error uploading verification document:", error);

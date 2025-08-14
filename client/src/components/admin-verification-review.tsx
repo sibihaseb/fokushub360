@@ -68,6 +68,7 @@ export function AdminVerificationReview() {
       return await response.json() as User[];
     }
   });
+  console.log("users", users);
 
   // Fetch verification documents for selected user
   const { data: documents, isLoading: loadingDocs } = useQuery({
@@ -237,7 +238,7 @@ export function AdminVerificationReview() {
                             <Badge variant={user.role === 'admin' ? 'default' : 'secondary'} className="text-xs">
                               {user.role}
                             </Badge>
-                            {user.isVerified ? (
+                            {user.verificationStatus=== "verified" ? (
                               <Badge className="bg-green-500/20 text-green-400 border-green-500/30 text-xs">
                                 <CheckCircle className="w-3 h-3 mr-1" />
                                 Verified
@@ -285,7 +286,7 @@ export function AdminVerificationReview() {
             {selectedUser && (
               <>
                 <TabsContent value="documents" className="space-y-4">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between ">
                     <div>
                       <h3 className="text-lg font-medium text-[#000000]">
                         Verification Documents: {selectedUser.firstName} {selectedUser.lastName}

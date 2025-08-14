@@ -9,7 +9,6 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
-import { apiRequest } from "@/lib/queryClient";
 import {
   Shield,
   Upload,
@@ -35,15 +34,17 @@ export default function Verification() {
     selfie: File | null;
     address: string;
     additionalInfo: string;
+    idDocumentUrl?: string; // Store Wasabi URL or ID for idDocument
+    selfieUrl?: string; // Store Wasabi URL or ID for selfie
   }>({
     phoneNumber: "",
     idDocument: null,
     selfie: null,
     address: "",
-    additionalInfo: ""
+    additionalInfo: "",
   });
 
-  const handleFileUpload = (file: File, type: 'idDocument' | 'selfie') => {
+  const handleFileUpload = async (file: File, type: 'idDocument' | 'selfie') => {
     // Validate file type
     if (!file.type.startsWith('image/')) {
       toast({
@@ -64,50 +65,73 @@ export default function Verification() {
       return;
     }
 
-    setFormData(prev => ({
-      ...prev,
-      [type]: file
-    }));
+    // Upload file to backend
+    try {
+      const formDataToSubmit = new FormData();
+      formDataToSubmit.append('file', file);
+      formDataToSubmit.append('type', type === 'idDocument' ? 'identity' : 'other');
 
-    toast({
-      title: `${type === 'idDocument' ? 'ID Document' : 'Selfie'} Uploaded`,
-      description: `${file.name} (${(file.size / 1024 / 1024).toFixed(2)}MB) uploaded successfully.`,
-    });
+      const token = localStorage.getItem("fokushub_token");
+      const response = await fetch('/api/verification/upload', {
+        method: 'POST',
+        body: formDataToSubmit,
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
-    console.log(`File uploaded: ${file.name}, Size: ${file.size} bytes, Type: ${file.type}`);
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.message || "Failed to upload file");
+      }
+
+      const result = await response.json();
+      setFormData(prev => ({
+        ...prev,
+        [type]: file,
+        [`${type}Url`]: result.wasabiUrl || result.id, // Store URL or ID from backend
+      }));
+
+      toast({
+        title: `${type === 'idDocument' ? 'ID Document' : 'Selfie'} Uploaded`,
+        description: `${file.name} (${(file.size / 1024 / 1024).toFixed(2)}MB) uploaded successfully.`,
+      });
+
+      console.log(`File uploaded: ${file.name}, Size: ${file.size} bytes, Type: ${file.type}, Wasabi URL: ${result.wasabiUrl}`);
+    } catch (error) {
+      toast({
+        title: "Upload Failed",
+        description: error.message || "Failed to upload file. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   const handleNext = async () => {
     if (step < 3) {
       setStep(step + 1);
     } else {
-      // Complete verification - submit to server
+      // Submit non-file data or complete verification
       try {
         const formDataToSubmit = new FormData();
         formDataToSubmit.append('phoneNumber', formData.phoneNumber);
         formDataToSubmit.append('address', formData.address);
         formDataToSubmit.append('additionalInfo', formData.additionalInfo);
-
-        if (formData.idDocument) {
-          formDataToSubmit.append('idDocument', formData.idDocument);
+        if (formData.idDocumentUrl) {
+          formDataToSubmit.append('idDocumentUrl', formData.idDocumentUrl);
         }
-        if (formData.selfie) {
-          formDataToSubmit.append('selfie', formData.selfie);
+        if (formData.selfieUrl) {
+          formDataToSubmit.append('selfieUrl', formData.selfieUrl);
         }
 
-        // const response = await fetch('/api/verification/submit', {
-        //   method: 'POST',
-        //   body: formDataToSubmit,
-        // });
         const token = localStorage.getItem("fokushub_token");
         const response = await fetch('/api/verification/submit', {
           method: 'POST',
           body: formDataToSubmit,
           headers: {
             Authorization: `Bearer ${token}`,
-          }
+          },
         });
-        //  const response = await apiRequest("POST", "/api/verification/submit", formDataToSubmit);
 
         if (response.ok) {
           toast({
@@ -117,16 +141,12 @@ export default function Verification() {
           setLocation("/dashboard");
         } else {
           const error = await response.json();
-          toast({
-            title: "Submission Failed",
-            description: error.message || "Failed to submit verification. Please try again.",
-            variant: "destructive",
-          });
+          throw new Error(error.message || "Failed to submit verification");
         }
       } catch (error) {
         toast({
           title: "Submission Failed",
-          description: error?.message || "Failed to submit verification. Please try again.",
+          description: error.message || "Failed to submit verification. Please try again.",
           variant: "destructive",
         });
       }
@@ -171,7 +191,9 @@ export default function Verification() {
           <Progress value={progress} className="h-2" />
           <div className="flex justify-between text-sm text-slate-400 mt-2">
             <span>Phone</span>
-            <span>Documents</span>
+            <span>DocumentsOLED
+
+System: Documents</span>
             <span>Review</span>
           </div>
         </div>
@@ -317,12 +339,12 @@ export default function Verification() {
 
                   <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
                     <span className="text-slate-300">Government ID</span>
-                    <span className="text-white">{formData.idDocument ? "Uploaded" : "Not uploaded"}</span>
+                    <span className="text-white">{formData.idDocumentUrl ? "Uploaded" : "Not uploaded"}</span>
                   </div>
 
                   <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
                     <span className="text-slate-300">Selfie</span>
-                    <span className="text-white">{formData.selfie ? "Uploaded" : "Not uploaded"}</span>
+                    <span className="text-white">{formData.selfieUrl ? "Uploaded" : "Not uploaded"}</span>
                   </div>
 
                   <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
@@ -358,6 +380,7 @@ export default function Verification() {
           <Button
             onClick={handleNext}
             className="bg-emerald-600 hover:bg-emerald-700"
+            disabled={step === 3 && (!formData.idDocumentUrl || !formData.selfieUrl)}
           >
             {step === 3 ? "Submit for Review" : "Next"}
             <ArrowRight className="w-4 h-4 ml-2" />
