@@ -611,7 +611,7 @@ export default function AdminDashboard() {
           <div className="mb-8">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center shadow-lg">
+                <div className="w-16 h-16 from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center shadow-lg">
                   <Shield className="text-white w-8 h-8" />
                 </div>
                 <div>

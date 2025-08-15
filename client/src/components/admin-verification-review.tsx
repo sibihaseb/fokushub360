@@ -121,6 +121,9 @@ export function AdminVerificationReview() {
     },
   });
 
+    
+ 
+
   const getDocumentIcon = (docType: string) => {
     switch (docType) {
       case 'identity': return <User className="w-4 h-4" />;
@@ -169,7 +172,7 @@ export function AdminVerificationReview() {
 
   return (
     <div className="space-y-6">
-      <Card className="bg-white/5 backdrop-blur-md border border-white/10">
+      <Card className="bg-white/2 backdrop-blur-md border border-white/10">
         <CardHeader>
           <CardTitle className="text-white flex items-center space-x-2">
             <Shield className="w-5 h-5" />
@@ -195,7 +198,7 @@ export function AdminVerificationReview() {
             </TabsList>
 
             <TabsContent value="users" className="mt-[4px] mb-[4px] text-[14px]">
-              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
                 <div className="relative flex-1 max-w-md w-full">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-white/60" />
                   <Input
@@ -206,10 +209,10 @@ export function AdminVerificationReview() {
                     className="pl-10 bg-[#272f73d6] border-white/20 text-white placeholder:text-white/60 w-full"
                   />
                 </div>
-                <p className="text-sm whitespace-nowrap text-[#00000099] mt-[0px] mb-[0px]">{filteredUsers.length} users found</p>
+                <p className="text-sm whitespace-nowrap text-[#ffff] mt-[0px] mb-[0px]">{filteredUsers.length} users found</p>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-3 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
                 {loadingUsers ? (
                   <div className="text-center py-8">
                     <div className="animate-spin w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full mx-auto mb-4"></div>
@@ -230,10 +233,10 @@ export function AdminVerificationReview() {
                           </span>
                         </div>
                         <div className="min-w-0 flex-1">
-                          <p className="font-medium truncate text-[#000000]">
+                          <p className="font-medium truncate text-[#ffff]">
                             {user.firstName && user.lastName ? `${user.firstName} ${user.lastName}` : user.email}
                           </p>
-                          <p className="text-sm truncate text-[#3a4a69]">{user.email}</p>
+                          <p className="text-sm truncate text-[#f7f6f2]">{user.email}</p>
                           <div className="flex flex-wrap gap-1 mt-2">
                             <Badge variant={user.role === 'admin' ? 'default' : 'secondary'} className="text-xs">
                               {user.role}
@@ -285,8 +288,9 @@ export function AdminVerificationReview() {
 
             {selectedUser && (
               <>
-                <TabsContent value="documents" className="space-y-4">
-                  <div className="flex items-center justify-between ">
+             
+                <TabsContent value="documents" className="space-y-4  ">
+                  <div className="flex items-center justify-between    ">
                     <div>
                       <h3 className="text-lg font-medium text-[#000000]">
                         Verification Documents: {selectedUser.firstName} {selectedUser.lastName}
@@ -322,9 +326,9 @@ export function AdminVerificationReview() {
                           <div className="flex items-center space-x-4">
                             {getDocumentIcon(doc.docType)}
                             <div>
-                              <p className="text-white font-medium">{doc.originalName}</p>
-                              <p className="text-white/60 text-sm">
-                                {doc.docType} • {formatFileSize(doc.fileSize)} • {new Date(doc.uploadedAt).toLocaleDateString()}
+                              <p className="text-black font-medium">{doc.originalName}</p>
+                              <p className="text-black/60 text-sm">
+                                {doc.fileName} • {formatFileSize(doc.fileSize)} • {new Date(doc.uploadedAt).toLocaleDateString()}
                               </p>
                             </div>
                           </div>
@@ -332,6 +336,7 @@ export function AdminVerificationReview() {
                             {getStatusBadge(doc.status)}
                             <Button 
                               size="sm" 
+                              onClick={()=>window.open(doc.wasabiUrl)}
                               style={{ backgroundColor: '#059669', color: '#ffffff', border: 'none' }}
                               className="!bg-emerald-600 hover:!bg-emerald-700 !text-white !border-0"
                             >

@@ -86,6 +86,7 @@ import {
 } from "@shared/schema";
 import { db } from "./db";
 import { eq, and, desc, asc, or, isNull, isNotNull, inArray, like, not, ne, gte, lte, lt, count, sql } from "drizzle-orm";
+import { generateSignedUrl, getPublicUrl } from "./storage/wasabi";
 
 export interface IStorage {
   // User operations
@@ -1605,13 +1606,21 @@ export class DatabaseStorage implements IStorage {
   }
 
   async getVerificationDocuments(userId: number): Promise<VerificationDocument[]> {
-    return await db
-      .select()
-      .from(verificationDocuments)
-      .where(eq(verificationDocuments.userId, userId))
-      .orderBy(desc(verificationDocuments.uploadedAt));
-  }
+  const docs = await db
+    .select()
+    .from(verificationDocuments)
+    .where(eq(verificationDocuments.userId, userId))
+    .orderBy(desc(verificationDocuments.uploadedAt));
 
+  const signedDocs = await Promise.all(
+    docs.map(async (doc) => ({
+      ...doc,
+      wasabiUrl: await generateSignedUrl(`${doc.fileName}`)
+    }))
+  );
+
+  return signedDocs;
+}
   async updateVerificationDocument(docId: number, updates: { status?: string; reason?: string }): Promise<VerificationDocument> {
     const [updated] = await db
       .update(verificationDocuments)

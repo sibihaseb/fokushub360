@@ -9,6 +9,8 @@ import {
   requireRole,
   type AuthRequest 
 } from "./auth";
+
+import { generateSignedUrl ,getPublicUrl, s3Client} from "./storage/wasabi";
 import { 
   insertUserSchema, insertCampaignSchema, insertParticipantResponseSchema, insertQuestionCategorySchema, 
   insertQuestionSchema, insertInvitationWaitlistSchema, insertPasswordResetTokenSchema, insertLegalDocumentSchema, 
@@ -33,6 +35,7 @@ import { generateEmailHTML } from "./email-html-generator";
 import { HealthCheckService } from "./health-check-service";
 import { db } from "./db";
 import { eq } from "drizzle-orm";
+import { PutObjectCommand } from "@aws-sdk/client-s3";
 
 // Initialize Stripe
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
@@ -2347,6 +2350,20 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+
+app.get("/admin/files/public-url/:fileName", async (req, res) => {
+  try {
+    const fileKey = `other/${req.params.fileName}`; // change "other" if needed
+    console.log("Fetching public URL for file:", fileKey);
+    const publicUrl = getPublicUrl(fileKey);
+    console.log("Public URL:", publicUrl);
+    res.json({ url: publicUrl });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Failed to get public URL" });
+  }
+});
+
   // Approve or reject verification
   app.post("/api/admin/verification/review", authenticateToken, requireRole(["admin", "manager"]), async (req: AuthRequest, res) => {
     try {
@@ -2881,10 +2898,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // Verification endpoints
-  app.post("/api/verification/upload", authenticateToken, uploadSingle, async (req: AuthRequest, res) => {
+
+
+app.post(
+  "/api/verification/upload",
+  authenticateToken,
+  uploadSingle,
+  async (req: AuthRequest, res) => {
     try {
-      if (!req.file) {
+      const file = req.file;
+      if (!file) {
         return res.status(400).json({ message: "No file uploaded" });
       }
 
@@ -2894,41 +2917,58 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
 
       const userId = req.user!.id;
-      const fileName = (req.file as any).key || `${userId}_${docType}_${Date.now()}${path.extname(req.file.originalname)}`;
-      const fileUrl = (req.file as any).location || `https://s3.${process.env.WASABI_REGION}.wasabisys.com/${process.env.WASABI_BUCKET}/${fileName}`;
-      
-      console.log(`Uploaded ${docType} document to Wasabi:  with ${userId}  ${fileName} (${req.file.size} bytes)`);
-      
-      // Store verification document info in database with Wasabi URL
+
+      // Generate unique key for Wasabi
+      const timestamp = Date.now();
+      const extension = path.extname(file.originalname);
+      const key = `verification/${userId}_${docType}_${timestamp}${extension}`;
+
+      // Upload to Wasabi
+      try {
+        await s3Client.send(
+          new PutObjectCommand({
+            Bucket: process.env.WASABI_BUCKET!,
+            Key: key,
+            Body: file.buffer,
+            ContentType: file.mimetype,
+          })
+        );
+        console.log(`Upload successful to Wasabi: ${key}`);
+      } catch (error) {
+        console.error("Error uploading to Wasabi:", error);
+        return res.status(500).json({ message: "Failed to upload file to Wasabi" });
+      }
+
+      const fileUrl = `https://s3.${process.env.WASABI_REGION}.wasabisys.com/${process.env.WASABI_BUCKET}/${key}`;
+
+      // Store verification document in your DB
       await storage.storeVerificationDocument({
         userId,
         docType,
-        fileName,
-        originalName: req.file.originalname,
-        fileSize: req.file.size,
-        mimeType: req.file.mimetype,
+        fileName: key,
+        originalName: file.originalname,
+        fileSize: file.size,
+        mimeType: file.mimetype,
         status: 'pending',
-       
-       
       });
 
-      res.json({ 
-        id: fileName,
+      res.json({
+        id: key,
         type: docType,
-        name: req.file.originalname,
+        name: file.originalname,
         status: 'pending',
         uploadDate: new Date().toISOString(),
         message: "Document uploaded successfully to Wasabi",
-        fileName: req.file.originalname,
+        fileName: file.originalname,
         docType,
-        wasabiUrl: fileUrl
-       
+        wasabiUrl: fileUrl,
       });
     } catch (error) {
       console.error("Error uploading verification document:", error);
       res.status(500).json({ message: "Failed to upload document" });
     }
-  });
+  }
+);
 
   app.post("/api/verification/submit", authenticateToken, async (req: AuthRequest, res) => {
     try {
@@ -4097,33 +4137,51 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  
   // Media Upload API Route for Wasabi
-  app.post("/api/upload/media", authenticateToken, requireRole(["admin"]), uploadSingle, async (req: AuthRequest, res) => {
-    try {
-      const file = req.file;
-      
-      if (!file) {
-        return res.status(400).json({ message: "No file uploaded" });
-      }
-
-      const fileName = (file as any).key || `${Date.now()}-${file.originalname}`;
-      const fileUrl = (file as any).location || `https://s3.${process.env.WASABI_REGION}.wasabisys.com/${process.env.WASABI_BUCKET}/${fileName}`;
-      
-      console.log(`Uploaded media to Wasabi: ${fileName} (${file.size} bytes)`);
-      
-      res.json({ 
-        url: fileUrl,
-        fileName: fileName,
-        originalName: file.originalname,
-        size: file.size,
-        mimeType: file.mimetype,
-        wasabiUrl: fileUrl
-      });
-    } catch (error) {
-      console.error("Error uploading media:", error);
-      res.status(500).json({ message: "Failed to upload media" });
+ app.post("/api/upload/media", authenticateToken, uploadSingle, async (req: AuthRequest, res) => {
+  try {
+    const file = req.file;
+    if (!file) {
+      return res.status(400).json({ message: "No file uploaded" });
     }
-  });
+
+    const userId = req.user?.id || "unknown";
+    const docType = req.body?.type || "media";
+    const key = `images/${userId}_${docType}_${Date.now()}${path.extname(file.originalname)}`;
+   try {
+    await s3Client.send(
+      new PutObjectCommand({
+        Bucket: process.env.WASABI_BUCKET!,
+        Key: key,
+        Body: file.buffer,
+        ContentType: file.mimetype,
+      })
+    );
+    console.log("Upload successful:", key);
+  }
+  catch (error) {
+    console.log("Error uploading to Wasabi:", error);
+   
+  }
+
+    const fileUrl = `https://s3.${process.env.WASABI_REGION}.wasabisys.com/${process.env.WASABI_BUCKET}/${key}`;
+
+    console.log(`Uploaded media to Wasassbi: ${key} (${file.size} bytes)`);
+
+    res.json({
+      url: fileUrl,
+      fileName: key,
+      originalName: file.originalname,
+      size: file.size,
+      mimeType: file.mimetype,
+      wasabiUrl: fileUrl
+    });
+  } catch (error) {
+    console.error("Error uploading media:", error);
+    res.status(500).json({ message: "Failed to upload media" });
+  }
+});
 
   app.post("/api/legal/data-request", async (req, res) => {
     try {

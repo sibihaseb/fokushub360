@@ -6,8 +6,8 @@ import { v4 as uuidv4 } from 'uuid';
 
 // Configure Wasabi S3 client
 const s3Client = new S3Client({
-  region: process.env.WASABI_REGION || 'us-east-1',
-  endpoint: `https://s3.${process.env.WASABI_REGION || 'us-east-1'}.wasabisys.com`,
+  region: process.env.WASABI_REGION || 'us-central-1',
+  endpoint: `https://s3.${process.env.WASABI_REGION || 'us-central-1'}.wasabisys.com`,
   credentials: {
     accessKeyId: process.env.WASABI_ACCESS_KEY!,
     secretAccessKey: process.env.WASABI_SECRET_KEY!,
