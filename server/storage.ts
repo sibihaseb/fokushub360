@@ -1664,13 +1664,29 @@ export class DatabaseStorage implements IStorage {
   }
 
   // User management operations
-  async getAllUsers(): Promise<User[]> {
-    return await db
-      .select()
-      .from(users)
-      .orderBy(desc(users.createdAt));
-  }
+ async getAllUsers(): Promise<any[]> {
+  const allUsers = await db
+    .select()
+    .from(users)
+    .orderBy(desc(users.createdAt));
 
+  // Check if each user has uploaded documents
+  const usersWithVerification = await Promise.all(
+    allUsers.map(async (user) => {
+      const docs = await db
+        .select()
+        .from(verificationDocuments)
+        .where(eq(verificationDocuments.userId, user.id));
+
+      return {
+        ...user,
+        hasVerificationDocuments: docs.length > 0, // ✅ true or false
+      };
+    })
+  );
+
+  return usersWithVerification;
+}
 
 
   async deleteUser(userId: number): Promise<void> {

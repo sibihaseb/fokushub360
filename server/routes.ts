@@ -16,7 +16,7 @@ import {
   insertQuestionSchema, insertInvitationWaitlistSchema, insertPasswordResetTokenSchema, insertLegalDocumentSchema, 
   insertUserLegalAcceptanceSchema, type InsertUser, users, behavioralAnalysis, matchingHistory, campaignMatching,
   participantResponses, campaignParticipants, notifications, userWarnings, userLegalAcceptances, participantProfiles,
-  passwordResetTokens, verificationSubmissions, campaigns, reports, emailSegments, emailCampaigns, adminSettings
+  passwordResetTokens, verificationSubmissions, campaigns, reports, emailSegments, emailCampaigns, adminSettings,questions,questionCategories
 } from "@shared/schema";
 import { z } from "zod";
 import { aiMatchingEngine, type MatchingCriteria } from "./ai-matching";

@@ -36,7 +36,7 @@ export async function apiRequest(
     tokenPrefix: token ? token.substring(0, 20) + '...' : 'No token',
     timestamp: new Date().toISOString()
   });
-  
+  console.log('📦 Request Data:', token);
   if (token) {
     headers["Authorization"] = `Bearer ${token}`;
   }

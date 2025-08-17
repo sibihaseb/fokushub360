@@ -91,7 +91,7 @@ export function AdminVerificationReview() {
     },
     enabled: !!selectedUser?.id
   });
-
+    console.log("responses", responses);
   // Review verification mutation
   const reviewMutation = useMutation({
     mutationFn: async ({ status, reason }: { status: string; reason?: string }) => {
@@ -263,6 +263,17 @@ export function AdminVerificationReview() {
                                 Survey Pending
                               </Badge>
                             )}
+                            {user?.hasVerificationDocuments ? (
+                              <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30 text-xs">
+                                <FileText className="w-3 h-3 mr-1" />
+                                Document Uploaded
+                              </Badge>
+                            ) : (
+                              <Badge className="bg-gray-500/20 text-gray-400 border-gray-500/30 text-xs">
+                                <FileText className="w-3 h-3 mr-1" />
+                                Document not Uploaded
+                              </Badge>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -406,8 +417,8 @@ export function AdminVerificationReview() {
                   </div>
                 </TabsContent>
 
-                <TabsContent value="questionnaire" className="space-y-4">
-                  <div className="flex items-center justify-between">
+                <TabsContent value="questionnaire" className="space-y-4 ">
+                  <div className="flex items-center justify-between ">
                     <div>
                       <h3 className="text-lg font-medium text-[#000000]">
                         Questionnaire Responses: {selectedUser.firstName} {selectedUser.lastName}
@@ -444,20 +455,20 @@ export function AdminVerificationReview() {
                       </div>
                     </div>
                   ) : (
-                    <div className="space-y-6">
+                    <div className="space-y-6 ">
                       <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-white font-medium mb-2">Response Summary</h4>
-                        <p className="text-white/60">
-                          Total Responses: <span className="text-white font-medium">{responses.totalResponses}</span>
+                        <h4 className="text-black font-medium mb-2">Response Summary</h4>
+                        <p className="text-black/60">
+                          Total Responses: <span className="text-black font-medium">{responses.totalResponses}</span>
                         </p>
                       </div>
 
                       {Object.entries(responses.responsesByCategory || {}).map(([category, categoryResponses]) => (
-                        <Card key={category} className="bg-white/5 backdrop-blur-md border border-white/10">
+                        <Card key={category} className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
                           <CardHeader>
                             <CardTitle className="text-white">{category}</CardTitle>
                           </CardHeader>
-                          <CardContent className="bg-[#c41d1dcf]">
+                          <CardContent className="bg-transparent">
                             <div className="space-y-3">
                               {categoryResponses.map((response: any, index: number) => (
                                 <div key={index} className="p-3 bg-white/5 rounded-lg">
